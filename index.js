@@ -8,8 +8,8 @@ import helmet from "helmet";
 import morgan from "morgan";
 import path from "path";
 import { fileURLToPath } from "url";
-import authRoutes from "./routes/auth.js"
-import {register} from "./controllers/auth.js";
+import authRoutes from "./server/routes/auth.js"
+import {register} from "./server/controllers/auth.js";
 
 // CONFIGURATIONS
 const __filename = fileURLToPath(import.meta.url);
@@ -55,3 +55,5 @@ mongoose.connect(process.env.MONGO_URL, {
 .catch((err) => {
     console.log(`${err} did not connect!`);
 });
+
+console.log(process.env.MONGO_URL);
