@@ -23,7 +23,7 @@ export const getUserFriends= async(req,res)=>{
             return { _id,firstName,lastName,occupation,location,picturePath };
         }
     )
-    res.status(200).json(formattedFriends)
+    res.status(200).json(formattedFriends);
 
     } catch (error) {
         res.status(404).json({message:error.message})
@@ -55,7 +55,7 @@ export const addRemoveFriend = async(req,res)=>{
                 return { _id,firstName,lastName,occupation,location,picturePath };
             }
         )
-        
+        res.status(200).json(formattedFriends);
     } catch (error) {
         res.status(404).json({message:error.message})
     }

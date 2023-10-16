@@ -43,6 +43,7 @@ app.post("/auth/register", upload.single("picture") ,register );
 // routes
 app.use("/auth",authRoutes);
 app.use("/users",userRoutes);
+app.use("/posts",postRoutes); //start video from here
 // Mongoose setup
 
 const PORT = process.env.PORT || 6001 ;
