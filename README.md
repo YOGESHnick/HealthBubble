@@ -8,7 +8,7 @@
 
 ```Teaser:```
 \
-<img src="https://thehealthcaretechnologyreport.com/wp-content/uploads/2019/02/hc-bubble.jpg">
+<img src="https://thehealthcaretechnologyreport.com/wp-content/uploads/2019/02/hc-bubble.jpg"  width="600px">
 \
 <img src="https://static.vecteezy.com/system/resources/previews/009/347/301/original/crab-animals-ocean-free-png.png" width="600px" height="600px" >
 \
