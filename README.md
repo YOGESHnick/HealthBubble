@@ -3,4 +3,4 @@
 > + Wait until its revealed publicly!
 > + Totally in stealth mode!
 >
-> + Being built with a desire to 
+> + Being built with a desire to make something publicly available!
