@@ -4,15 +4,15 @@ const postSchema = mongoose.Schema(
     {
         userID:{
             type:String,
-            required:True,
+            required:true,
         },
         firstName:{
             type:String,
-            required:True,
+            required:true,
         },
         lastName:{
             type:String,
-            required:True,
+            required:true,
         },
         location:String,
         description:String,
@@ -25,7 +25,7 @@ const postSchema = mongoose.Schema(
             default:[]
         }
     },
-    { timestamps;true }
+    { timestamps:true }
 );
 
 const Post = mongoose.model("Post",postSchema);
