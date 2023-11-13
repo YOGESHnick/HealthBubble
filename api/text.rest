@@ -1,12 +1,21 @@
 GET http://localhost:8800/api/auth/register
 
-### 
-POST http://localhost:8800/api/auth/register 
+# ### REGISTER
+# POST http://localhost:8800/api/auth/register 
+# Content-Type: application/json
+
+# {
+#         "username":"bcrypt",
+#         "email":"bcrypt@gmail.com",
+#         "password" : "12345678"
+# }
+
+### Login
+POST http://localhost:8800/api/auth/login 
 Content-Type: application/json
 
 {
-        "username":"jane",
-        "email":"jane@gmail.com",
+        "email":"crypt@gmail.com",
         "password" : "12345678"
 }
 
