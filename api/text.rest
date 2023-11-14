@@ -46,11 +46,12 @@ Content-Type: application/json
 
 ### follow
 
-PUT  http://localhost:8800/api/users/65539f76d3216363997e7d84/follow
+PUT  http://localhost:8800/api/users/65538cda5aff1e1cd9832eed/follow
 Content-Type: application/json
 
 {
-        "userId":"65538cda5aff1e1cd9832eed"
+        "userId":"65539f76d3216363997e7d84"
+        
 }
 
 ### unfollow
@@ -67,9 +68,9 @@ POST http://localhost:8800/api/posts
 Content-Type: application/json
 
 {
-        "userId":"65539f76d3216363997e7d84",
-        "desc" : "first Post attempt from nick",
-        "img":"nick.png"
+        "userId":"65538cda5aff1e1cd9832eed",
+        "desc" : "2nd Post attempt from nicky",
+        "img":"nicky.png"
 }
 
 ### update post
@@ -78,7 +79,7 @@ Content-Type: application/json
 
 {
         "userId":"65538cda5aff1e1cd9832eed",
-        "desc" : "second Post attempt from nick",
+        "desc" : "second Post attempt from nicky",
         "img":"nick.png"
 }
 
@@ -102,8 +103,12 @@ Content-Type: application/json
 
 ### get post
 GET  http://localhost:8800/api/posts/6553ce67c4496f314cb21b64
-# Content-Type: application/json
 
-# {
-#         "userId":"65539f76d3216363997e7d84"
-# }
+
+### get timeline
+GET  http://localhost:8800/api/posts/timeline/all 
+Content-Type: application/json
+
+{
+        "userId":"65538cda5aff1e1cd9832eed"
+}
