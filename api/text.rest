@@ -44,7 +44,7 @@ Content-Type: application/json
         "userId":"6553831e0a72c7edfc33748b"
 }
 
-###
+### follow
 
 PUT  http://localhost:8800/api/users/65539f76d3216363997e7d84/follow
 Content-Type: application/json
@@ -53,3 +53,11 @@ Content-Type: application/json
         "userId":"65538cda5aff1e1cd9832eed"
 }
 
+### unfollow
+
+PUT  http://localhost:8800/api/users/65539f76d3216363997e7d84/unfollow
+Content-Type: application/json
+
+{
+        "userId":"65538cda5aff1e1cd9832eed"
+}
