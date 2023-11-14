@@ -91,3 +91,11 @@ Content-Type: application/json
         "desc" : "second Post attempt from nick",
         "img":"nick.png"
 }
+
+### like/dislike post
+PUT http://localhost:8800/api/posts/6553ce67c4496f314cb21b64/like
+Content-Type: application/json
+
+{
+        "userId":"65539f76d3216363997e7d84"
+}
