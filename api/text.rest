@@ -61,3 +61,23 @@ Content-Type: application/json
 {
         "userId":"65538cda5aff1e1cd9832eed"
 }
+
+### post
+POST http://localhost:8800/api/posts
+Content-Type: application/json
+
+{
+        "userId":"65539f76d3216363997e7d84",
+        "desc" : "first Post attempt from nick",
+        "img":"nick.png"
+}
+
+### update post
+PUT http://localhost:8800/api/posts/6553ceaec4496f314cb21b66
+Content-Type: application/json
+
+{
+        "userId":"65539f76d3216363997e7d84",
+        "desc" : "second Post attempt from nick",
+        "img":"nick.png"
+}
