@@ -73,11 +73,11 @@ Content-Type: application/json
 }
 
 ### update post
-PUT http://localhost:8800/api/posts/6553ceaec4496f314cb21b66
+PUT http://localhost:8800/api/posts/6553ce67c4496f314cb21b64
 Content-Type: application/json
 
 {
-        "userId":"65539f76d3216363997e7d84",
+        "userId":"65538cda5aff1e1cd9832eed",
         "desc" : "second Post attempt from nick",
         "img":"nick.png"
 }
@@ -99,3 +99,11 @@ Content-Type: application/json
 {
         "userId":"65539f76d3216363997e7d84"
 }
+
+### get post
+GET  http://localhost:8800/api/posts/6553ce67c4496f314cb21b64
+# Content-Type: application/json
+
+# {
+#         "userId":"65539f76d3216363997e7d84"
+# }
