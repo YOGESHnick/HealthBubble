@@ -35,3 +35,11 @@ Content-Type: application/json
         "userId":"6553831e0a72c7edfc33748b",
         "password":"123456789"
 }
+
+###
+DELETE   http://localhost:8800/api/users/6553831e0a72c7edfc33748b
+Content-Type: application/json
+
+{
+        "userId":"6553831e0a72c7edfc33748b"
+}
