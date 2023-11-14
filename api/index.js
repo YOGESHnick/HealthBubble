@@ -23,7 +23,7 @@ app.use(morgan("common"));
 
 app.use("/api/users" ,userRoute);
 app.use("/api/auth" ,authRoute);
-app.use("/api/posts" ,authRoute);
+app.use("/api/posts" ,postRoute);
 
 app.listen(8800, ()=>{
     console.log("Server started at port 8800");
