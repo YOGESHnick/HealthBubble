@@ -44,27 +44,27 @@ export default function Rightbar({ profile }) {
         <h4 className="rightBarTitle">User friends</h4>
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="/assets/person/1.jpeg" />
+            <img className="rightbarFollowingImg" src="/assets/person/1.jpeg" alt="" />
             <span className="rightbarFollowingName" >John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="/assets/person/2.jpeg" />
+            <img className="rightbarFollowingImg" src="/assets/person/2.jpeg" alt="" />
             <span className="rightbarFollowingName" >John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="/assets/person/3.jpeg" />
+            <img className="rightbarFollowingImg" src="/assets/person/3.jpeg" alt="" />
             <span className="rightbarFollowingName" >John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="/assets/person/4.jpeg" />
+            <img className="rightbarFollowingImg" src="/assets/person/4.jpeg" alt="" />
             <span className="rightbarFollowingName" >John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="/assets/person/5.jpeg" />
+            <img className="rightbarFollowingImg" src="/assets/person/5.jpeg" alt="" />
             <span className="rightbarFollowingName" >John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="/assets/person/6.jpeg" />
+            <img className="rightbarFollowingImg" src="/assets/person/6.jpeg" alt="" />
             <span className="rightbarFollowingName" >John Carter</span>
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function Rightbar({ profile }) {
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-        <ProfileRightBar />
+        {profile ? <ProfileRightBar /> : <HomeRightBar />}
       </div>
     </div>
   );
