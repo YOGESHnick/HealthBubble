@@ -55,8 +55,8 @@ export default function Topbar() {
             </li>
           </ul>
           <form className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-            <button className="btn btn-outline-success" type="submit">Search</button>
+            <input className="form-control me-2" type="search" placeholder="Search anything" aria-label="Search"></input>
+            {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
           </form>
           <ul className="navbar-nav me-auto ms-auto px-2" style={{ textAlign: "center" }}>
             <li className="nav-item px-2">
