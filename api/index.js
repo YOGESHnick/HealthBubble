@@ -17,6 +17,9 @@ mongoose.connect(
 );
 
 // M I D D L E W A R E 
+const cors = require('cors');
+app.use(cors());
+
 app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));

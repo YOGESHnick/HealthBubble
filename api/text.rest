@@ -106,7 +106,7 @@ GET  http://localhost:8800/api/posts/6553ce67c4496f314cb21b64
 
 
 ### get timeline
-GET  http://localhost:8800/api/posts/timeline/all 
+GET  http://localhost:8800/api/posts/timeline/65538cda5aff1e1cd9832eed 
 Content-Type: application/json
 
 {
