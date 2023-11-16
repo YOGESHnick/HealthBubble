@@ -8,7 +8,13 @@
     top: 0;
     z-index: 999;
   }
-  
+  .mnc{
+    background-color:#1877f2;
+    color: #f1f1f1;
+  }
+  .mnc a{
+    color: #f1f1f1;
+  }
   .topbarLeft {
     flex: 3;
   }
