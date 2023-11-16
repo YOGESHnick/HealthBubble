@@ -11,6 +11,7 @@ export default function Feed() {
 
   useEffect(() => {
     const fetchPosts = async()=>{
+      // const response = await axios.get("posts/timeline/65538cda5aff1e1cd9832eed");
       const response = await axios.get("http://localhost:8800/api/posts/timeline/65538cda5aff1e1cd9832eed");
       console.log(response);
     };
