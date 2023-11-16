@@ -12,8 +12,9 @@ export default function Feed() {
   useEffect(() => {
     const fetchPosts = async()=>{
       // const response = await axios.get("posts/timeline/65538cda5aff1e1cd9832eed");
-      const response = await axios.get("http://localhost:8800/api/posts/timeline/65538cda5aff1e1cd9832eed");
-      console.log(response);
+      const res = await axios.get("http://localhost:8800/api/posts/timeline/65538cda5aff1e1cd9832eed");
+      // console.log(res.data);
+      setPosts(res.data)
     };
     fetchPosts();
   }, []);
@@ -21,11 +22,10 @@ export default function Feed() {
     <div className="feed">
       <div className="feedWrapper">
         <Share />
-        {/* { Posts.map(p=>(
-          <Post key={p.id} post={p} />
+        { posts.map(p=>(
+          <Post key={p._id} post={p} />
         )) };
-        <Post /> */}
-         
+        <Post />
       </div>
     </div>
   );
